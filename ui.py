@@ -1,7 +1,7 @@
 import tkinter as tk
+from add_edit import StudentAddEditPage
 from auth import login_user, register_user, delete_user
 from students_page import StudentsPage
-
 
 class App:
     def __init__(self, root):
@@ -133,3 +133,12 @@ class App:
 
         self.students_page = StudentsPage(self.root, self.current_user, self)
         
+      
+
+
+
+
+# ================= ADD/EDIT VIEW =================
+    def show_add_edit(self, mode="add", index=None):
+        self.students_page.frame.pack_forget()
+        self.add_edit_page = StudentAddEditPage(self.root, self.students_page, mode, index)
