@@ -132,3 +132,4 @@ class App:
         self.register_frame.pack_forget()
 
         self.students_page = StudentsPage(self.root, self.current_user, self)
+        

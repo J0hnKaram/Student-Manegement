@@ -33,3 +33,4 @@ def load_students():
 def save_students(data):
     with open(STUDENTS_FILE, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=4)
+        
