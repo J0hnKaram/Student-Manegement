@@ -178,3 +178,4 @@ class StudentAddEditPage:
         self.student_page.save()
         self.student_page.refresh()
         self.back()
+        # new updata /////
