@@ -95,16 +95,16 @@ class StudentsPage:
         index = int(selection[0])
         student_name = self.students[index]["name"]
 
-        # إنشاء نافذة تأكيد مخصصة (Custom Modal)
+       
         dialog = tk.Toplevel(self.root)
         dialog.title("Confirm Delete")
         dialog.geometry("350x200")
         dialog.configure(bg="#1e293b")
         dialog.resizable(False, False)
-        dialog.transient(self.root)  # تجعلها مرتبطة بالنافذة الرئيسية
-        dialog.grab_set()             # تمنع التفاعل مع النافذة الخلفية حتى تغلق
+        dialog.transient(self.root)  
+        dialog.grab_set()            
 
-        # وضع النافذة في منتصف التطبيق
+       
         x = self.root.winfo_x() + (self.root.winfo_width() // 2) - 175
         y = self.root.winfo_y() + (self.root.winfo_height() // 2) - 100
         dialog.geometry(f"+{int(x)}+{int(y)}")
